@@ -30,10 +30,6 @@ public class UserEmailTest {
                 {"abc@gmail.com.aa.au", false}});
     }
 
-    @Test
-    public void givenEmailAsVariable_shouldReturn_asParameterizedResult() {
-        UserRegistration user = new UserRegistration();
-        boolean result = user.checkMultipleEmail(this.email);
-        Assert.assertEquals(this.expectedResult, result);
-    }
+
 }
+

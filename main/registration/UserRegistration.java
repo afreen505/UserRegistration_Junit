@@ -9,7 +9,7 @@ public class UserRegistration {
     Scanner scanner = new Scanner(System.in);
 
     public boolean validateFirstName(String name) {
-        String regex = "^[A-Z][a-z]{2,}";
+        String regex = "^[A-Z][a-z]{3,}";
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(name);
         boolean b = m.matches();

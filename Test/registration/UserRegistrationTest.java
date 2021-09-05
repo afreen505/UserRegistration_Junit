@@ -14,7 +14,7 @@ public class UserRegistrationTest {
 
     @Test
     public void firstNameTest_should_giveTrueWhenNameIsValid() {
-        boolean result = user.validateFirstName("Afreen");
+        boolean result = user.validateFirstName("Afren");
         Assert.assertTrue(result);
     }
 

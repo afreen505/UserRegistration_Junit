@@ -13,7 +13,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void firstNameTest_should_giveTrueWhenNameIsValid() throws ValidationException {
+    public void firstNameTest_should_giveTrueWhenNameIsValid()  throws ValidationException{
         boolean result = user.validateFirstName("Afren");
         Assert.assertTrue(result);
     }
@@ -31,7 +31,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void firstNameTest_should_giveFalse_whenAllCharactersOfNameInUpperCase() throws ValidationException {
+    public void firstNameTest_should_giveFalse_whenAllCharactersOfNameInUpperCase()  {
         boolean result = user.validateFirstName("FATHIMA");
         Assert.assertFalse(result);
     }
